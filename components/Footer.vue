@@ -6,7 +6,7 @@
       <div class="flex items-center justify-center md:justify-start">
         <nuxt-link href="/" class="hover:underline non-italic">
           <nuxt-img
-            src="logo.png"
+            src="/logo.png"
             alt="Logo"
             class="h-10 md:h-16 mr-4"
             sizes="sm:100vw md:50vw lg:400px"

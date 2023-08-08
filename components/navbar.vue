@@ -6,7 +6,7 @@
       <div class="flex items-center">
         <nuxt-link to="/">
           <nuxt-img
-            src="logo.png"
+            src="/logo.png"
             alt="Logo"
             format="webp"
             class="h-8 md:h-16 logo"

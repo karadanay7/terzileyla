@@ -29,7 +29,7 @@
         </div>
         <div class="flex justify-center items-center">
           <nuxt-img
-            src="clip-art-sewing-machines-openclipart-quilting-sewing-machine-094d4b1ed6035d9b1e369ce08db32cf6.png"
+            src="/clip-art-sewing-machines-openclipart-quilting-sewing-machine-094d4b1ed6035d9b1e369ce08db32cf6.png"
             alt="Terzi Leyla"
             class="rounded-lg shadow-md"
             format="webp"

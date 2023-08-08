@@ -35,6 +35,10 @@ export default defineNuxtConfig({
       title: "Terzi Leyla | İzmir Gaziemir  Kıyafet Tadilatı  ",
       meta: [
         {
+          name: "google-site-verification",
+          content: "S3apzT565eDfOsgqIxoN0maxuZkiQXTVleXVl9ymsYQ",
+        },
+        {
           name: "description",
           content:
             "İzmir Gaziemir'de uzman terzi Leyla olarak kıyafet tadilatı, dikimi ve onarımında hizmetinizdeyiz. Kaliteli işçilik ve titizlikle hayal ettiğiniz kıyafetleri gerçeğe dönüştürüyoruz.",

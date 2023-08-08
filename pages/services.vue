@@ -7,7 +7,7 @@
       "
     >
       <div
-        class="max-w-screen-xl mx-0 md:mx-20 px-4 md:py-6 bg-gray-50 rounded-3xl"
+        class="max-w-screen-xl mx-0 md:mx-20 px-4 py-4 md:py-6 bg-gray-50 rounded-3xl"
       >
         <h1
           class="text-3xl md:text-6xl font-bold mb-4 text-gray-500 text-center drop-shadow-lg"

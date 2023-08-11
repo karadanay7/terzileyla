@@ -45,7 +45,7 @@ const services = [
   {
     title: "Çarşaflara Lastik Takımı",
     description:
-      "Çarşaf takımınıza lastik takımı eklemek için profesyonel hizmet sunuyoruz.",
+      "Çarşaf takımınıza lastik eklemek için profesyonel hizmet sunuyoruz.",
   },
   {
     title: "Arma Dikimi",

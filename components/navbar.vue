@@ -9,16 +9,24 @@
             src="/logo.png"
             alt="Logo"
             format="webp"
-            class="h-8 md:h-16 logo"
-            sizes=" sm:100vw md:100vw lg:400px"
+            class="h-14"
+            sizes="sm:100vw md:100vw lg:400px"
           />
         </nuxt-link>
       </div>
-      <ul class="text-sm md:text-lg flex flex-row">
+      <!-- Hamburger menu icon -->
+      <button
+        @click="toggleMenu"
+        class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-gray-400"
+      >
+        <Icon name="pajamas:hamburger" class="w-6 h-6 text-gray-700" />
+      </button>
+      <!-- Desktop menu -->
+      <ul class="hidden md:flex text-sm md:text-lg flex-row">
         <li>
           <nuxt-link
             to="/"
-            class="hidden sm:block py-2 text-[#9E6CA1] pl-4 md:pl-12 hover:text-gray-900 hover:scale-110 rounded p-0"
+            class="py-2 px-4 text-[#9E6CA1] hover:text-gray-900 hover:scale-110"
             aria-current="page"
             >Anasayfa</nuxt-link
           >
@@ -26,27 +34,83 @@
         <li>
           <nuxt-link
             to="/services"
-            class="block py-2 text-[#9E6CA1] pl-2 md:pl-12 hover:text-gray-900 hover:scale-110 rounded p-0"
+            class="py-2 px-4 text-[#9E6CA1] hover:text-gray-900 hover:scale-110"
             >Hizmetler</nuxt-link
           >
         </li>
         <li>
           <nuxt-link
             to="/aboutus"
-            class="block py-2 text-[#9E6CA1] pl-2 md:pl-12 hover:text-gray-900 hover:scale-110 rounded p-0"
+            class="py-2 px-4 text-[#9E6CA1] hover:text-gray-900 hover:scale-110"
             >Hakkımızda</nuxt-link
           >
         </li>
         <li>
           <nuxt-link
             to="/contact"
-            class="block py-2 text-[#9E6CA1] pl-2 md:pl-12 hover:text-gray-900 hover:scale-110 rounded p-0"
+            class="py-2 px-4 text-[#9E6CA1] hover:text-gray-900 hover:scale-110"
             aria-current="page"
             >İletişim</nuxt-link
           >
         </li>
       </ul>
     </div>
+    <!-- Hamburger menu content -->
+    <ul
+      v-if="isMenuOpen"
+      class="absolute z-10 w-2/4 right-0 bg-gray-50 border rounded-lg py-2 text-start"
+    >
+      <li>
+        <nuxt-link
+          to="/"
+          class="block py-2 px-4 text-[#9E6CA1] pl-8 hover:text-gray-900 hover:scale-110"
+          aria-current="page"
+          >Anasayfa</nuxt-link
+        >
+      </li>
+      <li>
+        <nuxt-link
+          to="/services"
+          class="block py-2 px-4 text-[#9E6CA1] pl-8 hover:text-gray-900 hover:scale-110"
+          >Hizmetler</nuxt-link
+        >
+      </li>
+      <li>
+        <nuxt-link
+          to="/aboutus"
+          class="block py-2 px-4 text-[#9E6CA1] pl-8 hover:text-gray-900 hover:scale-110"
+          >Hakkımızda</nuxt-link
+        >
+      </li>
+      <li>
+        <nuxt-link
+          to="/contact"
+          class="block py-2 px-4 text-[#9E6CA1] pl-8 hover:text-gray-900 hover:scale-110"
+          aria-current="page"
+          >İletişim</nuxt-link
+        >
+      </li>
+    </ul>
   </div>
 </template>
-<style scoped></style>
+<script setup>
+const isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+  if (window.innerWidth >= 650) {
+    isMenuOpen.value = false;
+  } else {
+    isMenuOpen.value = !isMenuOpen.value;
+  }
+  console.log(isMenuOpen.value);
+};
+
+onMounted(() => {
+  window.addEventListener("resize", toggleMenu);
+});
+
+// Don't forget to remove the event listener when the component is unmounted
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", toggleMenu);
+});
+</script>

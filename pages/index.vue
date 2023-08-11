@@ -11,9 +11,18 @@
     <div class="max-w-screen-xl mx-auto px-4 py-12 md:py-24">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="text-center md:text-left">
+          <nuxt-link
+            to="https://wa.me/<+905549710808> "
+            class="text-lg font-semibold text-gray-700"
+            >Hemen Ulasin!
+            <Icon
+              name="logos:whatsapp-icon"
+              class="w-10 h-10 text-gray-700 pb-1 -mt-1"
+          /></nuxt-link>
           <h1 class="text-4xl md:text-6xl font-bold mb-4 text-gray-700">
             Hoş Geldiniz!
           </h1>
+
           <p class="text-lg text-gray-600">
             Terzi Leyla, sizin için en iyi tadilat islemlerini yapmak icin
             burada! Kaliteli hizmetimiz ve uzman ekibimizle her türlü

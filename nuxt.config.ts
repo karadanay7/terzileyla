@@ -32,7 +32,7 @@ export default defineNuxtConfig({
 
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
-      title: "Terzi Leyla | İzmir Gaziemir  Kıyafet Tadilatı  ",
+      title: "Terzi Leyla - İzmir Gaziemir  Kıyafet Tadilatı  ",
       meta: [
         {
           name: "google-site-verification",

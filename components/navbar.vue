@@ -95,22 +95,22 @@
 </template>
 <script setup>
 const isMenuOpen = ref(false);
+const isSmallScreen = ref(false);
 
 const toggleMenu = () => {
-  if (window.innerWidth >= 650) {
-    isMenuOpen.value = false;
-  } else {
-    isMenuOpen.value = !isMenuOpen.value;
-  }
-  console.log(isMenuOpen.value);
+  isMenuOpen.value = !isMenuOpen.value;
+};
+
+const handleResize = () => {
+  isSmallScreen.value = window.innerWidth <= 640; // Adjust the breakpoint as needed
 };
 
 onMounted(() => {
-  window.addEventListener("resize", toggleMenu);
+  handleResize();
+  window.addEventListener("resize", handleResize);
 });
 
-// Don't forget to remove the event listener when the component is unmounted
 onBeforeUnmount(() => {
-  window.removeEventListener("resize", toggleMenu);
+  window.removeEventListener("resize", handleResize);
 });
 </script>

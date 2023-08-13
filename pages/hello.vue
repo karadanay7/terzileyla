@@ -5,7 +5,7 @@
         <Icon name="twemoji:sewing-needle" class="stitch-icon h-7 w-7" />
       </div>
       <h2
-        class="font-bold mb-4 ml-2 pt-4 text-[#9E6CA1] hover:text-[#553788] text-2xl md:text-4xl"
+        class="font-bold mb-4 ml-2 text-[#9E6CA1] hover:text-[#553788] text-3xl sm:text-4xl md:text-4xl"
       >
         İletişim Bilgileri
       </h2>
@@ -28,7 +28,7 @@
         </ul>
       </div>
       <h2
-        class="font-bold mb-2 ml-2 text-[#9E6CA1] hover:text-[#553788] text-2xl md:text-4xl"
+        class="font-bold mb-2 ml-2 text-[#9E6CA1] hover:text-[#553788] text-lg sm:text-2xl md:text-3xl"
       >
         Bize Ulaşın
       </h2>

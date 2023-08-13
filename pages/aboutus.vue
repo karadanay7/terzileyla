@@ -2,18 +2,18 @@
   <div class="p-5 bg-violet-50">
     <div class="p-5 stitch relative">
       <div class="bg-center bg-fixed overflow-hidden">
-        <div class="bg-opacity-40 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="bg-opacity-40 py-6 md:py-12 px-4 sm:px-6 lg:px-8">
           <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div class="flex flex-col md:flex-row items-start">
                 <h1
-                  class="text-4xl font-extrabold text-[#9E6CA1] hover:text-[#553788] sm:text-5xl md:text-6xl"
+                  class="text-4xl font-bold text-[#9E6CA1] hover:text-[#553788] sm:text-5xl md:text-6xl"
                 >
                   Hakkımızda
                 </h1>
               </div>
             </div>
-            <div class="mt-12">
+            <div class="py-6 md:py-12">
               <p class="text-lg text-gray-500">
                 Terzi Leyla olarak, giyim dünyasına özenle dokunuyor ve
                 kıyafetlerinizdeki detaylara önem veriyoruz. Yılların verdiği
@@ -32,7 +32,7 @@
               </p>
             </div>
 
-            <div class="mt-14">
+            <div class="mt-12">
               <h2
                 class="text-3xl font-bold text-[#9E6CA1] hover:text-[#553788]"
               >

@@ -21,10 +21,17 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           <div v-for="(service, index) in services" :key="index">
             <h2
-              class="text-xl md:text-2xl pl-0 md:pl-4 font-bold mb-4 text-[#9E6CA1] hover:text-[#553788]"
+              class="text-xl md:text-2xl pl-0 md:pl-4 font-bold pb-1 text-[#9E6CA1] hover:text-[#553788]"
             >
               {{ service.title }}
             </h2>
+            <h1 class="pl-0 md:pl-4 pb-1 text-[#553788]">
+              <Icon
+                name="heroicons:scissors-20-solid"
+                class="stitch-icon h-5 w-5"
+              />
+              - - - - - - - - - - - - - - - - -
+            </h1>
             <p class="text-gray-600 pl-0 md:pl-4 text-lg md:text-xl">
               {{ service.description }}
             </p>

@@ -16,10 +16,13 @@
       </div>
       <!-- Hamburger menu icon -->
       <button
-        @click="toggleMenu"
+        @click="toggleMenu()"
         class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-gray-400"
       >
-        <Icon name="pajamas:hamburger" class="w-6 h-6 text-gray-700" />
+        <Icon
+          :name="isMenuOpen ? 'pajamas:close' : 'pajamas:hamburger'"
+          class="w-6 h-6 text-gray-700"
+        />
       </button>
       <!-- Desktop menu -->
       <ul class="hidden md:flex text-sm md:text-lg flex-row">
@@ -58,7 +61,7 @@
     <!-- Hamburger menu content -->
     <ul
       v-if="isMenuOpen"
-      class="absolute z-10 w-2/4 right-0 bg-gray-50 border rounded-lg py-2 text-start"
+      class="block md:hidden absolute z-10 w-2/4 right-0 bg-gray-50 border rounded-lg py-2 text-start"
     >
       <li>
         <nuxt-link
@@ -98,19 +101,22 @@ const isMenuOpen = ref(false);
 const isSmallScreen = ref(false);
 
 const toggleMenu = () => {
+  console.log("Toggling menu");
   isMenuOpen.value = !isMenuOpen.value;
+  console.log("Toggling menu");
 };
 
-const handleResize = () => {
-  isSmallScreen.value = window.innerWidth <= 640; // Adjust the breakpoint as needed
-};
+// const handleResize = () => {
+//   console.log("Resizing window");
+//   isSmallScreen.value = window.innerWidth <= 640; // Adjust the breakpoint as needed
+// };
 
-onMounted(() => {
-  handleResize();
-  window.addEventListener("resize", handleResize);
-});
+// onMounted(() => {
+//   handleResize();
+//   window.addEventListener("resize", handleResize);
+// });
 
-onBeforeUnmount(() => {
-  window.removeEventListener("resize", handleResize);
-});
+// onBeforeUnmount(() => {
+//   window.removeEventListener("resize", handleResize);
+// });
 </script>

@@ -1,13 +1,16 @@
 <template>
   <div class="bg-gray-50">
-    <Vue3Marquee class=" ">
-      <h1 class="font-bold pr-28">Paça Tadilatı</h1>
-      <h1 class="font-bold pr-28">Çarşaflara Lastik Dikimi</h1>
-      <h1 class="font-bold pr-28">Arma Dikimi</h1>
-      <h1 class="font-bold pr-28">Fermuar İşlemleri</h1>
-      <h1 class="font-bold pr-28">Her Türlü Tadilat</h1>
-      <h1 class="font-bold pr-28">Ütü ve Kurutemizleme</h1>
-    </Vue3Marquee>
+    <client-only>
+      <Vue3Marquee>
+        <h1 class="font-bold pr-28">Paça Tadilatı</h1>
+        <h1 class="font-bold pr-28">Çarşaflara Lastik Dikimi</h1>
+        <h1 class="font-bold pr-28">Arma Dikimi</h1>
+        <h1 class="font-bold pr-28">Fermuar İşlemleri</h1>
+        <h1 class="font-bold pr-28">Her Türlü Tadilat</h1>
+        <h1 class="font-bold pr-28">Ütü ve Kurutemizleme</h1>
+      </Vue3Marquee>
+    </client-only>
+
     <div class="max-w-screen-xl mx-auto px-4 py-12 md:py-24">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="text-center md:text-left">
@@ -62,3 +65,4 @@
     </div>
   </div>
 </template>
+<script setup></script>

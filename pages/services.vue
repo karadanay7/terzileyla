@@ -99,6 +99,21 @@ const services = [
     description:
       "Kaban, mont gibi kıyafetlerinizde oluşan tüy dökülmelerini temizlemek ve düzeltmek için size destek sağlıyoruz.",
   },
+  {
+    title: "Profesyonel Ütü Hizmetleri",
+    description:
+      "Deneyimli personelimiz, farklı kumaş türlerine uygun sıcaklıklar ve teknikler kullanarak giysilerinizi en iyi şekilde ütüler. Bu hizmet sayesinde zamandan tasarruf ederken her zaman şık ve profesyonel bir görünüm elde edebilirsiniz.",
+  },
+  {
+    title: "Hızlı ve Güvenilir Kuru Temizleme Hizmetleri",
+    description:
+      "Kuru temizleme uzmanlarımız, özenle seçilmiş kimyasallar ve son teknoloji ekipman kullanarak giysilerinizin lekelerini çıkarır ve tazeliklerini geri kazandırır. Hassas kumaşlardan kalın giysilere kadar geniş bir yelpazede hizmet sunuyoruz. Giysilerinizin en iyi şekilde bakıldığından ve uzun ömürlü olduklarından emin olmak için bize güvenebilirsiniz.",
+  },
+  {
+    title: "Acil Ütü ve Kuru Temizleme Hizmetleri ile Zamanın Tadını Çıkarın",
+    description:
+      "Aniden özel bir etkinlik veya toplantı için giysilere ihtiyacınız varsa, endişelenmeyin. Acil ütü ve kuru temizleme hizmetlerimiz sayesinde hızlı bir şekilde giysilerinizi temizleyebilir ve ütüleyebiliriz. Kaliteli sonuçlar için hızlı dönüş süreleri sunarak, beklenmedik durumlarda bile her zaman en iyi görünümünüzü yakalamanıza yardımcı olabiliriz.",
+  },
 ];
 </script>
 

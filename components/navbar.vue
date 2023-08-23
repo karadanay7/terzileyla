@@ -1,8 +1,6 @@
 <template>
   <div id="TopMenu" class="w-full border-b font-sans">
-    <div
-      class="flex items-center justify-between px-4 md:px-8 py-2 bg-gray-50 border rounded-lg"
-    >
+    <div class="flex items-center justify-between px-4 md:px-8 py-2 bg-gray-50">
       <div class="flex items-center">
         <nuxt-link to="/">
           <nuxt-img
@@ -101,22 +99,6 @@ const isMenuOpen = ref(false);
 const isSmallScreen = ref(false);
 
 const toggleMenu = () => {
-  console.log("Toggling menu");
   isMenuOpen.value = !isMenuOpen.value;
-  console.log("Toggling menu");
 };
-
-// const handleResize = () => {
-//   console.log("Resizing window");
-//   isSmallScreen.value = window.innerWidth <= 640; // Adjust the breakpoint as needed
-// };
-
-// onMounted(() => {
-//   handleResize();
-//   window.addEventListener("resize", handleResize);
-// });
-
-// onBeforeUnmount(() => {
-//   window.removeEventListener("resize", handleResize);
-// });
 </script>
